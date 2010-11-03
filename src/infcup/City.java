@@ -6,6 +6,7 @@ import java.util.List;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.widgets.Canvas;
 
+//Class to save the city
 public class City {
 
 	private List<District> districts;
