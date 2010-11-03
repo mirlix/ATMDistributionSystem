@@ -1,0 +1,93 @@
+!SESSION 2010-10-21 21:16:21.841 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\uni\InfCup\infcup2011
+
+!ENTRY org.eclipse.osgi 4 0 2010-10-21 21:16:22.129
+!MESSAGE Error reading configuration: D:\programming\download\eclipse-java-ganymede-SR1-win32\eclipse\configuration\org.eclipse.osgi\.manager\.fileTableLock (Access is denied)
+!STACK 0
+java.io.FileNotFoundException: D:\programming\download\eclipse-java-ganymede-SR1-win32\eclipse\configuration\org.eclipse.osgi\.manager\.fileTableLock (Access is denied)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.Locker_JavaNio.lock(Locker_JavaNio.java:32)
+	at org.eclipse.osgi.storagemanager.StorageManager.lock(StorageManager.java:389)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:687)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.initFileManager(BaseStorage.java:208)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.initialize(BaseStorage.java:142)
+	at org.eclipse.osgi.baseadaptor.BaseAdaptor.initializeStorage(BaseAdaptor.java:124)
+	at org.eclipse.osgi.framework.internal.core.Framework.initialize(Framework.java:180)
+	at org.eclipse.osgi.framework.internal.core.Framework.<init>(Framework.java:152)
+	at org.eclipse.osgi.framework.internal.core.OSGi.createFramework(OSGi.java:90)
+	at org.eclipse.osgi.framework.internal.core.OSGi.<init>(OSGi.java:31)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:286)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.osgi 4 0 2010-10-21 21:16:37.513
+!MESSAGE 
+!STACK 0
+java.io.IOException: Manager is not opened.
+	at org.eclipse.osgi.storagemanager.StorageManager.add(StorageManager.java:218)
+	at org.eclipse.osgi.storagemanager.StorageManager.closeOutputStream(StorageManager.java:884)
+	at org.eclipse.osgi.storagemanager.ManagedOutputStream.close(ManagedOutputStream.java:53)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveBundleDatas(BaseStorage.java:561)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:428)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.access$1(BaseStorage.java:418)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage$StateSaver.run(BaseStorage.java:1248)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 4 0 2010-10-21 21:16:37.737
+!MESSAGE 
+!STACK 0
+java.io.IOException: Manager is not opened.
+	at org.eclipse.osgi.storagemanager.StorageManager.lookup(StorageManager.java:426)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveStateData(BaseStorage.java:598)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:429)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.access$1(BaseStorage.java:418)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage$StateSaver.run(BaseStorage.java:1248)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 4 0 2010-10-21 21:16:37.836
+!MESSAGE 
+!STACK 0
+java.io.IOException: Manager is not opened.
+	at org.eclipse.osgi.storagemanager.StorageManager.add(StorageManager.java:218)
+	at org.eclipse.osgi.storagemanager.StorageManager.closeOutputStream(StorageManager.java:884)
+	at org.eclipse.osgi.storagemanager.ManagedOutputStream.close(ManagedOutputStream.java:53)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveBundleDatas(BaseStorage.java:561)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.saveAllData(BaseStorage.java:428)
+	at org.eclipse.osgi.internal.baseadaptor.BaseStorage.frameworkStop(BaseStorage.java:828)
+	at org.eclipse.osgi.baseadaptor.BaseAdaptor.frameworkStop(BaseAdaptor.java:272)
+	at org.eclipse.osgi.framework.internal.core.SystemBundleActivator.stop(SystemBundleActivator.java:66)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(BundleContextImpl.java:1050)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:1046)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.suspendAllBundles(StartLevelManager.java:685)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:637)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:312)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.SystemBundle.suspend(SystemBundle.java:236)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:678)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:576)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(OSGi.java:41)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:424)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
